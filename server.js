@@ -22,7 +22,6 @@ app.use(
       objectSrc: ["'none'"],
       scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.nonce}'`],
       styleSrc: ["'self'", (req, res) => `'nonce-${res.locals.nonce}'`],
-      // fontSrc: ["'self'", 'data:'],
       fontSrc: ["'self'"],
       connectSrc: ["'self'"],
       imgSrc: ["'self'"]
